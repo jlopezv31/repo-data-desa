@@ -11,4 +11,4 @@ jobs:
         uses: docker://orrosenblatt/validate-json-action:latest
         env:
           INPUT_SCHEMA: /schema.json
-          INPUT_JSONS: /bs-api-loan-v1.json, /bs-api-v1.json, /bs-api-v2.json, /bs-cuenta-v2.json, /bs-persona-v1.json
+          INPUT_JSONS: /bs-api-loan-v1.json,/bs-api-v1.json,/bs-api-v2.json,/bs-cuenta-v2.json,/bs-persona-v1.json

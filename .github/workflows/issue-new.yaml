@@ -1,3 +1,4 @@
+name: Run Actions when issue was created
 on:
   issues:
     types:

@@ -1,14 +1,15 @@
-name: Run Actions when issue was created
+name: Issue Opened/Edited
+
 on:
   issues:
     types:
       - opened
+      - edited
+
 jobs:
-  build:
-    name: Hello world action
+  test-issue:
+    name: Validate Issue
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: ./
-        with:
-          MY_NAME: "Abhishek"
+      - name: Output Validation Results
+        run: echo 'The label was bug'
